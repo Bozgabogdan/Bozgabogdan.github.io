@@ -1,0 +1,45 @@
+.header-menu {
+	float: right;
+	margin-right: 100px;
+	display: inline-block;
+
+}
+
+.header-details {
+	text-align: center;
+	padding-top: 50px;
+}
+
+.header {
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+
+.price-range {
+	display: inline-block;
+	float: right;
+	margin-right: 130px;
+}
+
+a {
+	margin-left: 20px;
+}
+
+.select-menu {
+	display: inline-block;
+	margin-left: 100px;
+}
+
+select {
+	margin-right: 20px;
+	border-style: none;
+}
+
+.logo {
+	margin-left: 70px;
+	display: inline-block;
+}
+
+i {
+	font-size: 25px;
+}
