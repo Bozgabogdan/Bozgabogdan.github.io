@@ -1,3 +1,8 @@
+body {
+	margin: 0;
+}
+
+
 .header-menu {
 	float: right;
 	margin-right: 100px;
@@ -18,12 +23,12 @@
 .price-range {
 	display: inline-block;
 	float: right;
-	margin-right: 130px;
+	margin-right: 230px;
+	width: 200px;
+	position: relative;
 }
 
-a {
-	margin-left: 20px;
-}
+
 
 .select-menu {
 	display: inline-block;
@@ -47,12 +52,46 @@ i {
 ul {
 	list-style: none;
 }
+a {
+	margin-left: 10px;
+}
+li.dot::before {
 
-li.dot::before 
-{
 	content: "\2022"; 
 	color: red;
+	margin-left: 10px;
 }
+
 li {
 	display: inline-block;
 }
+
+
+label {
+	position: absolute;
+	top: 0px;
+	right: 250px;
+	
+}
+
+.amount1 {
+	position: absolute;
+	top: 0px;
+	right: 215px;
+}
+.amount2 {
+	position: absolute;
+	top: 0px;
+	right: -45px;
+}
+.ui-slider-handle, .ui-state-default, .ui-corner-all, .ui-state-hover {
+	border-radius: 25px;
+}
+
+
+.slider-range .ui-slider-handle.ui-state-default.ui-corner-all {
+	border-radius: 25px;
+}
+
+
+
