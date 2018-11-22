@@ -43,3 +43,16 @@ select {
 i {
 	font-size: 25px;
 }
+
+ul {
+	list-style: none;
+}
+
+li.dot::before 
+{
+	content: "\2022"; 
+	color: red;
+}
+li {
+	display: inline-block;
+}
