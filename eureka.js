@@ -52,14 +52,14 @@ $( function() {
       max: 150,
       values: [ 0, 150 ],
       slide: function( event, ui ) {
-        $( ".amount1" ).text(ui.values[ 0 ]);
-        $(" .amount2").text(ui.values[ 1 ]);
+        $( ".amount1" ).text("$" + ui.values[ 0 ]);
+        $(" .amount2").text("$" + ui.values[ 1 ]);
         getFromLocalStorage();
       } 
     });
 
-    $( ".amount1" ).text($( ".slider-range" ).slider( "values", 0 ));
-    $(".amount2").text($( ".slider-range" ).slider( "values", 1 ));
+    $( ".amount1" ).text("$" + $( ".slider-range" ).slider( "values", 0 ));
+    $(".amount2").text("$" + $( ".slider-range" ).slider( "values", 1 ));
 
     
   } 
@@ -103,8 +103,10 @@ $( function() {
     var arrStorage = localStorage.getItem('itemToSave');
     var arr = JSON.parse(arrStorage);
     var filteredArray = [];
-    const amount1 = parseInt($('.amount1').text());
-    const amount2 = parseInt($('.amount2').text());
+    const span1 = $('.amount1').text();
+    const span2 = $('.amount2').text();
+    const amount1 = parseInt(span1.substring(1));
+    const amount2 = parseInt(span2.substring(1));
     console.log(amount2);
     for(let i = 0; i < arr.length; i++) {
 

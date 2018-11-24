@@ -4,6 +4,7 @@
 	<title>Eureka Caffe</title>
 	<link rel="stylesheet" type="text/css" href="Eureka.css">
 	<link rel="stylesheet" type="text/css" href="jquery-ui.css">
+	<link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
 	
   	
 	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
@@ -17,7 +18,9 @@
 			<div class="header-top">
 				<div class="logo">
 					<i class="fas fa-coffee"></i>
-					<a>Eureka Caffe</a>
+					<div class="div-a">
+						<a>Eureka Caffe</a>
+					</div>	
 				</div>
 				<div class="header-menu">
 					<ul>	
@@ -45,6 +48,7 @@
 		</div>
 		<div class="page">
 			<div class="sorting-menu">
+				<div class="menu-container">
 				<div class="select-menu">
 					<select class="category">
 						<option value="" disabled selected>CATEGORY
@@ -54,26 +58,30 @@
 						<option value="Entrees">Entrees</option>
 						<option value="Desert">Desert</option>
 					</select>
+					<i class="fas category-arrow fa-angle-down"></i>
 					<select class="sorting">
 						<option value="" disabled selected>SORTING
 						</option>
 						<option value="Price Ascending">Price Ascending</option>
 						<option value="Price Descending">Price Descending</option>
 					</select>
+					<i class="fas sorting-arrow fa-angle-down"></i>
 					<select class="vegetarian">
 						<option value="" disabled selected>VEGETARIAN
 						</option>
 						<option value="Salads">Salads</option>
 					</select>
+					<i class="fas vegetarian-arrow fa-angle-down"></i>
 				</div>	
 				<div class="price-range">
   						<label >PRICE</label>
   						<span class="amount1">
   						</span>
   						<div class="slider-range">
-						</div>	
+						</div>
   						<span class="amount2">
   						</span>	
+				</div>
 				</div>	
 			</div>
 			<div class="products">
