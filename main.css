@@ -8,17 +8,23 @@ h1 {
 }
 .header-menu {
 	display: inline-block;
-    margin-left: auto;
-    margin-right: 0;
-    font-size: 13px;
-    font-weight: 400;
-    cursor: pointer;
+  margin-left: auto;
+  margin-right: 0;
+  font-size: 13px;
+  font-weight: 400;
+  cursor: pointer;
 }
 
 .header-details {
 	text-align: center;
 	padding-top: 50px;
 }
+
+.zig-zag {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 
 .header {
 	padding-top: 20px;
@@ -34,12 +40,12 @@ h1 {
 	font-size: 12px;
 	margin-left: auto;
 	align-items: center;
-	
 }
+
 
 .sorting-menu {
 	background-color: rgb(240,240,242);
-    font-size: 15px; 
+  font-size: 15px; 
 }
 
 .select-menu {
@@ -55,8 +61,8 @@ select {
 	border-style: none;
 	background-color: rgb(240,240,242);
 	-webkit-appearance: none; 
-   -moz-appearance: none;
-   	appearance: none;       
+  -moz-appearance: none;
+  appearance: none;       
 }
 
 
@@ -77,6 +83,7 @@ ul {
 	word-wrap: break-word;
 	max-width: 70px;
 }
+
 li.dot::before {
 
 	content: "\2022"; 
@@ -92,7 +99,6 @@ li {
 label {
 	margin-right: 5px;
 	font-weight: bold;
-	
 }
 
 .amount1 {
@@ -119,13 +125,11 @@ label {
 
 .products {
 	display: flex;
-    flex-wrap: wrap;
-    padding: 50px 0;
-    max-width: 1080px;
-    width: 100%;
-    margin: 0 auto;
-	
-
+  flex-wrap: wrap;
+  padding: 50px 0;
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .product {
@@ -135,8 +139,6 @@ label {
 	background-color: white;
 	border-right: 1px solid rgb(240,240,242);
 	padding-bottom:10px;
-	
-
 }
 
 .product:nth-child(4n) {
@@ -150,7 +152,6 @@ label {
 	transform: scale(1.10);
 	border:  1px solid rgb(240,240,242);
 	border-radius: 2px;
-
 }
 .product-image {
 	width: 150px;
@@ -163,6 +164,7 @@ label {
 	font-weight: bold;
 	font-size: 15px;
 }
+
 .product-type {
 	display: block;
 	color: rgb(192,192,192);
@@ -208,9 +210,9 @@ label {
 .ui-widget.ui-widget-content {
 	height: 5px !important;
 	width: 175px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
 }
 
 .ui-slider-horizontal .ui-slider-range { 
@@ -218,16 +220,16 @@ label {
 }
 .menu-container {
 	max-width: 940px;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
 }
+
 .header-top {
 	max-width: 940px;
-    display: flex;
-    width: 100%;
-    margin: 0 auto;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .select {

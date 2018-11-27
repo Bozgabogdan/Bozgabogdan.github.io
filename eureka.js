@@ -1,7 +1,7 @@
 $( function() {
    
 
-   var food = [{
+  var food = [{
     title : "Pasta Carbonara",
     image: "./assets/pizza.jpg",
     type : "Second courses",
@@ -60,8 +60,6 @@ $( function() {
 
     $( ".amount1" ).text("$" + $( ".slider-range" ).slider( "values", 0 ));
     $(".amount2").text("$" + $( ".slider-range" ).slider( "values", 1 ));
-
-    
   } 
 
   sliderRange();
@@ -85,15 +83,11 @@ $( function() {
       type.addClass('product-type item-info');
       price.addClass('product-price');
 
-
-
-
       product.append(image);
       product.append(productInfo);
       productInfo.append(title);
       productInfo.append(type);
       productInfo.append(price);
-
 
       $('.products').append(product);
     }
