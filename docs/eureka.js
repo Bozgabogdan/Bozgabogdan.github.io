@@ -108,6 +108,7 @@ $( function() {
     const amount1 = parseInt(span1.substring(1));
     const amount2 = parseInt(span2.substring(1));
     console.log(amount2);
+
     for(let i = 0; i < arr.length; i++) {
 
       if( arr[i].price > amount1 && arr[i].price < amount2 ) {
@@ -118,4 +119,8 @@ $( function() {
     $('.products').html('');
     render(filteredArray);
   }
+
+  $('.drop-li').on("click",function() {
+    $(this).parent().siblings(".select").html($(this).html());
+  })
 });
